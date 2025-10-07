@@ -1,0 +1,11 @@
+.cart-container {
+  position: relative;
+}
+.cart-container span {
+  position: absolute;
+  right: -20px;
+  top: -8px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  background-color: red;
+}

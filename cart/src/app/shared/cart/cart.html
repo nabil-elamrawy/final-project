@@ -1,0 +1,13 @@
+<div class="cart-container">
+  <a routerLink="/cart">
+    <h2>🛒 Cart</h2>
+    <span>{{ cart.totalQuantity() }}</span>
+  </a>
+</div>
+<!-- <div *ngFor="let item of cart.items()">
+    {{ item.name }} (x{{ item.quantity }}) - {{ item.price | currency }}
+    <button (click)="remove(item.id)">Remove</button>
+</div>
+
+<p>Total Price: {{ cart.totalPrice() | currency }}</p>
+<button (click)="cart.clearCart()">Clear Cart</button> -->

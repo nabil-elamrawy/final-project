@@ -1,0 +1,146 @@
+.cart-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.item-details {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.increase {
+  background: #4caf50;
+  color: white;
+}
+
+.decrease {
+  background: #ff9800;
+  color: white;
+}
+
+.remove {
+  background: #f44336;
+  color: white;
+}
+
+.clear {
+  background: #6c63ff;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.clear:hover {
+  background: #5a54e0;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.total span {
+  color: #6c63ff;
+}
+
+.create-order {
+  background: #4caf50;
+  color: white;
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.create-order:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.create-order:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff5f5;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.error-message i {
+  font-size: 16px;
+}

@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <h2><a routerLink="">Home</a></h2>
+  <div class="nav-links">
+    <ng-container *ngIf="authService.isAuthenticated()">
+      <a routerLink="/orders" class="orders-link">
+        <i class="fas fa-shopping-bag"></i>
+        Orders
+      </a>
+      <app-notifications></app-notifications>
+      <button class="auth-button" (click)="onSignOut()">
+        <i class="fas fa-sign-out-alt"></i>
+        Sign Out
+      </button>
+    </ng-container>
+    <ng-container *ngIf="!authService.isAuthenticated()">
+      <a routerLink="/signin" class="auth-button">
+        <i class="fas fa-sign-in-alt"></i>
+        Sign In
+      </a>
+    </ng-container>
+    <app-cart></app-cart>
+  </div>
+</nav>

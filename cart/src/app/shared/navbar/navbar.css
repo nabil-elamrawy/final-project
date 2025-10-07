@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 0 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.orders-link,
+.auth-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.orders-link:hover,
+.auth-button:hover {
+  background-color: #c4c4c4;
+}
+
+.orders-link i,
+.auth-button i {
+  font-size: 1.2em;
+}
+
+.auth-button {
+  color: #007bff;
+}
